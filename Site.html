@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleSite.css">
+    <link rel="icon" href="img/facear.webp" type="image/png">
+    <!--LINKS DA API DO MAPA-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <title>UNIFACEAR</title>
+</head>
+
+<body> 
+    <header class="cabeçalho">
+        <div class="cabeçalho-logo-nome">
+
+            <img class="cabeçalho-logo" src="img/facear.webp" alt="Logo-Facear">
+
+            <h1 class="cabeçalho-nome">UNIFACEAR</h1>
+        </div>
+
+        <nav class="cabeçalho-menu">
+            <a class="cabeçalho-menu-item" href="#sobre-nos">Sobre Nós</a>
+            <a class="cabeçalho-menu-item" href="#cursos">Cursos</a>
+            <a class="cabeçalho-menu-item" href="#visita">Visitas</a>
+            <a class="cabeçalho-menu-item" href="#saber-mais">Curiosidade</a>
+            <a class="cabeçalho-menu-item" href="#contatos">Contatos</a>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+        <article>
+            <section class="bem-vindo">
+                <h1 class="bem-vindo-titulo"><strong>SEJA BEM VINDO!</strong></h1>
+    
+                <p class="bem-vindo-texto">É com imensa alegria e entusiasmo que damos as boas-vindas a todos vocês ao nosso site oficial do Centro Universitário <strong>Unifacear</strong>. Este é o lugar onde a jornada do conhecimento e do crescimento pessoal começa, onde sonhos são nutridos e aspirações se tornam realidade. Em nosso campus virtual, você encontrará uma comunidade vibrante e diversificada de aprendizes ávidos por conhecimento e apaixonados por explorar o mundo em todas as suas dimensões. A nossa Faculdade é um ambiente de <strong>aprendizagem estimulante</strong>, onde a busca incessante pelo saber e a <strong>excelência acadêmica</strong> são as pedras angulares do nosso compromisso com a <strong>educação</strong>.</p>
+
+                <div class="bem-vindo-imagem">
+                    <img src="img/facear.webp" alt="logo facear">
+                </div>
+            </section>
+
+            <section id="sobre-nos" class="sobre-nos">
+                <img class="sobre-nos-imagem" src="img/sobre-nos.png" alt="sobre-nós-imagem">
+    
+                <div class="sobre-nos-conteudo">
+                    <h3 class="sobre-nos-titulo">SOBRE NÓS</h3>
+
+                    <p class="sobre-nos-texto">A UNIFACEAR Centro Universitário é resultado da transformação de faculdade para Centro Universitário, uma espécie de upgrade da legislação brasileira, para aquelas instituições que atingem um nível de qualidade e maturidade ao longo do tempo. Antes de ser UNIFACEAR Centro Universitário, o nome era Facear – Faculdade Educacional de Araucária, credenciada pelo Ministério da Educação no ano de 2001. Desde então vem em um grande processo de expansão.</p>
+                </div>
+            </section>
+            
+            <section class="servicos">
+                <div class="servico-conteudo">
+                    <h1 class="servico-conteudo-titulo">O QUE NÓS FAZEMOS</h1>
+    
+                    <p class="servico-conteudo-texto">Somos um grupo educacional que tem por propósito disponibilizar uma formação de qualidade em que o ensino, a pesquisa, a extensão e a prestação de serviços apresentar-se-ão de forma integrada e comprometida com a realidade social.</p>
+                </div>
+    
+                <img class="servico-imagem" src="img/servicos da empresa.jpg" alt="Serviços da empresa">
+            </section>
+            
+            <section id="cursos" class="produtos">
+                <h1 class="produtos-titulo">CURSOS</h1>
+    
+                <ul class="produtos-lista">
+                    <li>Administração</li>
+                    <li>Análise de Sistemas</li>
+                    <li>Arquitetura e Urbanismo</li>
+                    <li>Biomedicina</li>
+                    <li>Ciências Contabeis</li>
+                    <li>Direito</li>
+                    <li>Enfermagem</li>
+                    <li>Engenharia Civil</li>
+                    <li>Engenharia de Produção</li>
+                    <li>Engenharia Elétrica</li>
+                    <li>Engenharia Mecânica</li>
+                    <li>Fisioterapia</li>
+                    <li>Gestão Financeira</li>
+                    <li>Gestão de RH</li>
+                    <li>Logistica</li>
+                    <li>Pedagogia</li>
+                    <li>Quimica Industrial</li>
+                    <li>Sistemas de Informação</li>
+                </ul>
+            </section>
+    
+            <section class="visita-localizacao">
+                <div class="agendamento-card">
+                    <h1 id="visita" class="visita-titulo">AGENDE SUA VISÍTA!</h1>
+                    <form class="formulario" action="">
+                        <fieldset class="fieldset">
+                            <legend class="legenda">Agendamento</legend>
+                            <br>
+                            <div class="input">
+                                <label class="label-input" for="nome">Nome Completo</label>
+                                <input type="text" name="nome" id="nome" class="input-usuario">
+                            </div>
+                            <br><br>
+                            <div class="input">
+                                <label class="label-input" for="email">Email</label>
+                                <input type="email" name="email" id="email" class="input-usuario">
+                            </div>
+                            <br><br>
+                            <div class="input">
+                                <label class="label-input" for="cpf">CPF</label>
+                                <input type="text" placeholder="EX: xxx.xxx.xxx-xx" name="cpf" id="ecpf" class="input-usuario">
+                            </div>
+                            <br><br>
+                            <div class="input">
+                                <label for="data">Data da visita</label>
+                                <input type="date" name="data" id="data" class="input-usuario">
+                            </div>
+                            <br><br>
+                            <div class="input">
+                                <input type="submit" name="marcar" id="botao">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="localizacao-card">
+                    <h1 class="localizacao-titulo">NOSSA LOCALIZAÇÃO!</h1>
+                    <div id="map"></div>
+                    <script src="Mapa.js"></script>
+                </div>
+
+                <!--Fazer um formulário pedindo informações do cliente-->
+            </section>
+        </article>
+
+        <aside id="saber-mais" class="conteudo-secundario">
+            <h1 class="saber-mais-titulo">QUER SABER MAIS?</h1>
+
+            <p class="saber-mais-texto">Mostraremos algumas coisas que podem ser feitas com programação que um aluno de Análise e Desenvolvimento de Sistemas da <strong>UNIFACEAR</strong> pode realizar!</p>  
+
+            <div class="cotacao">
+                <h2 class="cotacao-titulo">1 - Realizar a consulta da cotação do dolar em uma data especifica</h2>
+
+                <div class="cotacao-data">
+                    <h3 class="cotacao-titulo-item">Cotação do dolar</h3>
+                    <p class="cotacao-compra-data" id="cotacao-compra"></p>
+
+                    <h3 class="cotacao-titulo-item">Data de Acesso</h3>
+                    <p class="cotacao-compra-data" id="data-hora-acesso"></p>
+                </div>
+
+                <script src="CotacaoDolar.js"></script>
+            </div>
+        </aside>
+
+        <section id="contatos" class="contatos">
+            <h1 class="contatos-titulo">CONTATOS</h1>
+            <nav class="links-contato">
+                <a class="link-contato" href="https://www.facebook.com/unifacear" target="_blank">Facebook</a>
+                <a class="link-contato" href="https://www.instagram.com/unifacear/" target="_blank">Instagram</a>
+                <a class="link-contato" href="https://www.youtube.com/channel/UCGzPvzkSPwJK1GZ8fTKUQjw" target="_blank">Youtube</a>
+                <a class="link-contato" href="https://www.linkedin.com/school/unifacear-centro-universitario/?originalSubdomain=br" target="_blank">Linkedin</a>
+            </nav>
+        </section>
+
+        <section class="qualidades">
+            <h1 class="qualidades-titulo">INDICADORES DE QUALIDADE</h1>
+
+            <div class="qualidades-imagens">
+                <img src="img/mec.png" alt="Instituição credenciada MEC">
+                <img src="img/melhor_universidade.png" alt="Melhor Universidade 2018">
+                <img src="img/cimec4.png" alt="Nota 4 CI MEC">
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape-conteudo">Feito por: <a class="link-rodape" href="https://www.linkedin.com/in/jo%C3%A3o-paulo-will-423233245/" target="_blank">João Paulo Will</a></p>
+    </footer>
+</body>
+</html>
